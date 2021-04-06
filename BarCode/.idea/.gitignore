@@ -1,0 +1,10 @@
+# Ignored (general)
+*.log
+**/target/
+bin/data/*
+target/*
+
+# Ignored (IntelliJ)
+*.iml
+.idea/*
+.metadata/
