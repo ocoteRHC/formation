@@ -4,7 +4,11 @@ public class Display
 
     public String getDisplayPriceForBarcode(final String barcode)
     {
-        return formatPrice(_inventory.getProductByBarcode(barcode).getPrice());
+        final Product productByBarcode = _inventory.getProductByBarcode(barcode);
+        if(productByBarcode == null)
+            return "Product does not exist";
+
+        return formatPrice(productByBarcode.getPrice());
     }
 
     private String formatPrice(final double price)

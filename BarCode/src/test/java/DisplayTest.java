@@ -11,4 +11,11 @@ public class DisplayTest
         assertEquals("$12.34", display.getDisplayPriceForBarcode("123456789012"));
         assertEquals("$43.21", display.getDisplayPriceForBarcode("210987654321"));
     }
+
+    @Test
+    public void onBarCodeForInexistingProduct()
+    {
+        final Display display = new Display();
+        assertEquals("Product does not exist", display.getDisplayPriceForBarcode("null"));
+    }
 }
