@@ -1,3 +1,4 @@
+import Product.Product;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -5,9 +6,16 @@ import static org.junit.Assert.*;
 public class ScannerTest
 {
     @Test
-    public void onBarcodeScanned()
+    public void onGetScannedBarcode()
     {
         final Scanner scanner = new Scanner();
         assertEquals("123456789012", scanner.getBarcode());
+    }
+
+    @Test
+    public void onGetProductBarcode()
+    {
+        final Product product = new Product();
+        assertEquals("123456789012", product.getBarcode());
     }
 }
