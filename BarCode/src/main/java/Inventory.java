@@ -8,7 +8,10 @@ public class Inventory
     public Inventory()
     {
         final Product product = new Product();
+        final Product product2 = new Product("210987654321", 43.21);
+        
         addProduct(product);
+        addProduct(product2);
     }
 
     private void addProduct(final Product product)

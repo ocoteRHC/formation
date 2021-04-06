@@ -9,5 +9,6 @@ public class DisplayTest
     {
         final Display display = new Display();
         assertEquals("$12.34", display.getDisplayPriceForBarcode("123456789012"));
+        assertEquals("$43.21", display.getDisplayPriceForBarcode("210987654321"));
     }
 }
