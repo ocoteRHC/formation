@@ -1,10 +1,8 @@
-# Ignored (general)
-*.log
-**/target/
-bin/data/*
+BarCode/.metadata/*
+BarCode/target/*
+BarCode/.idea/*
 target/*
-
-# Ignored (IntelliJ)
-*.iml
 .idea/*
-.metadata/
+
+*.log
+*.iml

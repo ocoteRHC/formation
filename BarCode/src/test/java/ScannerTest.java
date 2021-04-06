@@ -5,14 +5,9 @@ import static org.junit.Assert.*;
 public class ScannerTest
 {
     @Test
-    public void onScannerPass()
+    public void onBarcodeScanned()
     {
-        assertTrue(true);
-    }
-
-    @Test
-    public void onScannerFail()
-    {
-        fail();
+        final Scanner scanner = new Scanner();
+        assertEquals("123456789012", scanner.getBarcode());
     }
 }
